@@ -19,13 +19,10 @@ Implementation using Python code
 
 Testing the server and client 
 
-## PROGRAM:
-
- Server code
- 
- echo-server.py
-
-
+###PROGRAM:
+##Server code
+##echo-server.py
+```py
 import socket
 
 
@@ -45,8 +42,8 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 break
             conn.sendall(data)
 
-Client code
-echo-client.py
+##Client code
+#3echo-client.py
 
 
 import socket
@@ -63,6 +60,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
 
 print(f"Received {data!r}")
+```
 
 ## OUTPUT:
 
